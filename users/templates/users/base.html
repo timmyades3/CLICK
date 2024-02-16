@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Click.com {% endblock  %}</title>
+    {% load static %}
+    {% block css %}
+    <link rel="stylesheet" rel="text/css" href="{% static 'users/base.css' %}">
+    {% endblock %}
+</head>
+<body>
+    <div class="main-container">
+        <section class="nav">
+            <div class="logo">Click</div>
+                <div class="opt">
+                    <ul class="optlist">
+                        <li id="optone"><a href="http://" target="_blank" rel="noopener noreferrer">Home </a> </li>
+                        <li id="opttwo"><a href="http://" target="_blank" rel="noopener noreferrer">About </a></li>
+                        <li id="optthree"><a href="http://" target="_blank" rel="noopener noreferrer">Sign in </a></li>
+                        <li id="optfour"><a href="http://" target="_blank" rel="noopener noreferrer">Sign Up </a></li>
+                    </ul>
+                </div>
+        </section>
+        <section class="body">
+        {% block body %}
+            <div class="bodysteps">
+                <h1>Register.Verify.Chat</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+ elit. Iure nostrum deleniti tenetur velit accusamus 
+optio officiis vitae aut?
+                </p>
+            </div>
+            <ul class="grid">
+                <li><div class="step1">
+                    <div class="icon">
+                        <p>1</p>
+                    </div>
+                    <img src="../../../media/images/small1.png" alt="">
+                </div>
+                </li>
+                <li><div class="step2">
+                    <div class="icon">
+                        <p>2</p>
+                    </div>
+                    <img src="../../../media/images/small2.png" alt="" srcset="">
+                </div>
+                </li>
+                <li><div class="step3">
+                    <div class="icon">
+                        <p>3</p>
+                    </div>
+                    <img src="/CLICK/media/images/image 5.png" alt="" srcset="">
+                </div>
+                </div></li>
+            </ul>
+        {% endblock %}
+        </section>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1098" height="720" viewBox="0 0 1098 720" fill="none">
+        <g filter="url(#filter0_d_5_8)">
+        <path d="M8 35C8 20.0883 20.0883 8 35 8H1063C1077.91 8 1090 20.0883 1090 35V685C1090 699.912 1077.91 712 1063 712H35C20.0883 712 8 699.912 8 685V35Z" fill="url(#paint0_radial_5_8)"/>
+        </g>
+        </svg>
+</body>
+</html>

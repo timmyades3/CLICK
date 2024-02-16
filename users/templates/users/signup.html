@@ -1,0 +1,14 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'users/signup.css' %}">
+{% endblock %}
+{% block body %}
+            <img src="../../../media/images/verify.png" alt="" srcset="">
+            <div class="form">
+                <form action="" method="post">    
+                    <p>Verify Email</p>
+                    <input type="number" name="otp" id="otp" placeholder="Enter Otp Token">
+                </form>
+            </div>
+{% endblock %}
